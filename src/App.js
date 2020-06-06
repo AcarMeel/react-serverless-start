@@ -2,18 +2,25 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import  * as pages from './pages';
 import { Navbar } from './components';
-import './App.css';
+import { Container } from './styled/Container';
+import { Main } from './styled/Main';
+import Global from './styled/Global';
 
 function App() {
   return (
     <Router>
-        <Navbar/>
-        <Switch>
-            <Route path='/game' component={pages.Game}/>
-            <Route path='/highScores' component={pages.HighScores}/>
-            <Route path='/gameOver' component={pages.GameOver}/>
-            <Route path='/' component={pages.Home}/>
-        </Switch>
+        <Global/>
+        <Main>
+            <Container>
+                <Navbar/>
+                <Switch>
+                    <Route path='/game' component={pages.Game}/>
+                    <Route path='/highScores' component={pages.HighScores}/>
+                    <Route path='/gameOver' component={pages.GameOver}/>
+                    <Route path='/' component={pages.Home}/>
+                </Switch>
+            </Container>
+        </Main>
     </Router>
   );
 }
