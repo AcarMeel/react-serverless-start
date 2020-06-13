@@ -12,7 +12,6 @@ const table = base.table(process.env.AIRTABLE_TABLE_NAME);
 
 
 exports.handler = async (event) => {
-    try {
         if (event.httpMethod !== 'POST') {
             return {
                 statusCode: 405,
