@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { StyledGame, StyledScore, StyledTimer, StyledCharacter } from '../styled/Game'
-import { Strong } from '../styled/Shared'
+import { Strong } from '../styled/Shared';
+import { useScore } from '../contexts/ScoreContext';
 
 export default function Game({ history }) {
     const [score, setScore] = useScore(0);
