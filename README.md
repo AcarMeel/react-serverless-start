@@ -66,3 +66,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### `Airtable`
+
+https://airtable.com/account
+https://flaviocopes.com/airtable/
+
+
+### `Netlify`
+
+### `netlify init`
+### `netlify dev`
+
+### http://localhost:53014/.netlify/functions/getHighScores
