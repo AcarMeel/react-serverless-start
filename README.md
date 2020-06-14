@@ -79,3 +79,5 @@ https://flaviocopes.com/airtable/
 ### `netlify dev`
 
 ### http://localhost:53014/.netlify/functions/getHighScores
+
+### `Auth0`
